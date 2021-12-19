@@ -1,0 +1,18 @@
+<%- include('header.ejs') %>
+<script>
+    hideLoading()
+
+    function showError()
+    {
+        arrError = []
+        arrError.push("Email is required.")
+        arrError.push("Password is required.")
+
+        errorMessage(arrError)
+    }
+</script>
+<%- include('menubar.ejs') %>
+<a href="/" class="link">Go Back</a>
+<button onclick="showError()">Yes</button>
+<h3>You are logged in.</h3>
+<%- include('footer.ejs') %>

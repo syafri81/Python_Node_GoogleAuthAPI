@@ -1,0 +1,33 @@
+<%- include('header.ejs') %>
+<script>
+  hideLoading()
+</script>
+  <div class="row" style="background:#fff">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div style="padding:50px;transform: translateY(45%);background-color: #eee;">
+        <!--<form action="/signup" method="post">-->
+          <div class="form-group" style="margin-top: 20px;">
+            <select class="form-control" name="accounttype">
+              <option value="0">--Please select--</option>
+              <option value="1">Google account</option>
+              <option value="2">Facebook account</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email"/>
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password"/>
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-primary col-md-12" onclick="doLogin(2)"><i class="fa fa-user-plus"></i> Sign Up</button>
+          </div>
+        </div>
+        <!--</form>-->
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+<%- include('footer.ejs') %>
+  
